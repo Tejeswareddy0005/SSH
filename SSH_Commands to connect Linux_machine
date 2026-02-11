@@ -1,0 +1,3 @@
+ssh -i key_pair.pem user_name@ip_address
+
+Example: ssh tejeswar@10.0.0.18
