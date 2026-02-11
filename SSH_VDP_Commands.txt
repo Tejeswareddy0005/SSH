@@ -1,0 +1,14 @@
+VDP Connection: 
+ssh -L3389:localhost:3389 tejeswar@10.105.129.165 
+
+ssh -L3389:localhost:3389 10.105.220.73 -l sterlingdev 
+
+
+alias vdp='ssh -L3389:localhost:3389 tejeswar@10.105.129.165'  
+type vdp 
+
+Command to setup Password:
+passwd user_name  
+
+Path:
+/home/sterlingdev/.ssh/authorized_keys
