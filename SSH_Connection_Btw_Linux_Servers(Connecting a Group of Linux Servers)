@@ -1,0 +1,21 @@
+To Connection 2,3-4 Linux Servers:
+
+Follow 3 Steps:
+
+1.Update Root Password:
+passwd root
+Set password
+ 
+2.Modify Configurations:
+vi /etc/ssh/sshd_config
+Line number :65 , 40 modify to Yes, and remove comments (#)
+
+3.Restart SSHD:
+systemctl restart sshd
+
+Generate Public/Private key in Master server or Main Server:
+ssh-keygen
+
+Copy Public key to remaning Servers:
+ssh-copy-id root@private_IP_address
+
